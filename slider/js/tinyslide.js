@@ -1,7 +1,7 @@
 (function ($, window, document, undefined) {
 
   var defaults = {
-    autoplay: 2000,
+    autoplay: 3000,
     animationDuration: 800,
     hoverPause: true,
     slide: ">figure",

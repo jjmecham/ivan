@@ -22,8 +22,10 @@
     <style>
         header{padding:0!important;}
         #tiny{padding:0;}
-        section{height: 100vh; border-bottom:2px solid black; background-image: url("images/logo_trans.png"); background-repeat: no-repeat; background-size: 100vh;}
-        .blue{background-color: #008fd5;}
+        section{height: 100vh; border-bottom:2px solid black;}
+        .logobg{background-image: url("images/logo_trans.png"); background-repeat: no-repeat; background-size: 100vh;}
+        .solidblue{background-color: #008fd5;}
+        .blue{background-color: rgba(0, 143, 213, .6);}
         .ltgray{background-color: #dadada;}
         .dkgray{background-color: #272826;}
         .black{background-color: #000;}
@@ -33,7 +35,7 @@
     </style>
     <body id="page-top">
         <!-- Navigation-->
-        <nav class="navbar navbar-expand-lg blue fixed-top shadowb" id="mainNav">
+        <nav class="navbar navbar-expand-lg solidblue fixed-top shadowb" id="mainNav">
             <div class="container px-4">
                 <a class="navbar-brand" href="#page-top"><img src="images/logo.png" alt="Elite Prime Goods logo" height="50px;" style="margin-right: 20px;"/>Elite Prime Goods</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
@@ -73,14 +75,15 @@
                   <figure>
                     <img src="images/warehouse.jpg" alt="" />
                     <figcaption>
-                      Even More Text
+                        <i class="bi-arrow-right-square-fill" style="font-size: 2rem; color: black; margin-right: 10px;"></i>3000 sq feet of product<br>
+                        <i class="bi-arrow-right-square-fill" style="font-size: 2rem; color: black; margin-right: 10px;"></i>Access to 53 footers
                     </figcaption>
                   </figure>
                 </aside>
               </section>
         </header>
         <!-- About section-->
-        <section id="about">
+        <section id="about" class="logobg">
             <div class="container px-4">
                 <div class="row gx-4 justify-content-center">
                     <div class="col-lg-8">
@@ -100,7 +103,7 @@
             </div>
         </section>
         <!-- Services section-->
-        <section class="bg-light" id="brands">
+        <section class="blue" id="brands">
             <div class="container px-4">
                 <div class="row gx-4 justify-content-center">
                     <div class="col-lg-8">
@@ -118,7 +121,7 @@
             </div>
         </section>
         <!-- Wholesale section-->
-        <section class="" id="wholesale">
+        <section class="ltgray" id="wholesale">
             <div class="container px-4">
                 <div class="row gx-4 justify-content-center">
                     <div class="col-lg-8">

@@ -290,9 +290,16 @@
                 <div class="row  justify-content-center">
                     <!--Grid column-->
                     <div class="col-lg-6">
-                        <form id="contact-form" name="contact-form" action="https://formsubmit.co/gleamgraphics@gmail.com"
-                            method="POST">
-        
+                        <form id="contact-form" name="contact-form" action="https://formsubmit.co/eliteprimegoods@gmail.com" method="POST">
+                            <!--Honeypot-->
+                            <input type="text" name="_honey" style="display: none";>
+
+                            <!--Disable Captcha-->
+                            <input type="hidden" name="_captcha" value="false">
+
+                            <!--Form success-->
+                            <input type="hidden" name="_next" value="https://eliteprime.store/success.html">
+
                             <!--Grid row-->
                             <div class="row">
         
@@ -343,7 +350,9 @@
                                 </div>
                             </div>
                             <!--Grid row-->
-                            <button type="submit">Send</button>
+                            <div class="text-center">
+                                <button class="btn btn-primary" type="submit">Send</button>
+                            </div>
                         </form>
         
                         <!-- <div class="text-center text-md-left">

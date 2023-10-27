@@ -17,8 +17,7 @@
     <link href="css/styles.css" rel="stylesheet" />
     <link href="slider/css/tinyslide.css" rel="stylesheet" />
     <link href="icons/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet" />
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <script src="https://code.jquery.com/jquery-1.11.2.min.js" />
     </script>
     <script src="slider/js/tinyslide.js" />
@@ -71,6 +70,10 @@
         background-color: #000;
     }
 
+    .c-black {
+        color: black;
+    }
+
     .nav-link:hover,
     .nav-link:visited {
         color: white;
@@ -79,6 +82,7 @@
 
     .shadowb {
         box-shadow: 0px 2px 5px #272826;
+        border: 1px solid #747474;
     }
 
     .navbar {
@@ -92,6 +96,19 @@
     a {
         text-decoration: none;
         color: #008fd5
+    }
+    
+    .bg-eblue {
+        background-color: #008fd5;
+    }
+
+    .send {
+        background-color: #008fd5;
+        color: #FFF;
+    }
+    .send:hover {
+        color: #CCC;
+        background-color: #0172aa;
     }
     /* .testborder{border:1px solid red;} */
 
@@ -118,6 +135,7 @@
         transform: translate(-50%, -50%);
         height:100px;
     }
+
 </style>
 <body id="page-top">
     <!-- Navigation-->
@@ -146,33 +164,6 @@
                 <a class="btn btn-lg btn-light" href="#about">Start scrolling!</a>
             </div> -->
     <header>
-        <!-- <section id="tiny" class="tinyslide">
-                <aside class="slides">
-                    <figure>
-                        <img src="images/grocery.jpg" alt="" />
-                        <figcaption>
-                            Commitment
-                        </figcaption>
-                    </figure>
-                    <figure>
-                        <img src="images/personal-care.jpg" alt="" />
-                        <figcaption>
-                            Growth
-                        </figcaption>
-                    </figure>
-                    <figure>
-                        <img src="images/warehouse.jpg" alt="" />
-                        <figcaption class="d-flex flex-column">
-                            <p><i class="bi-arrow-right-square-fill"
-                                    style="font-size: 2rem; color: black; position: relative; bottom:3px; right: 8px;"></i>3000
-                                sq feet of product</p>
-                            <p><i class="bi-arrow-right-square-fill"
-                                    style="font-size: 2rem; color: black; position: relative; bottom:3px; right: 8px;"></i>Access
-                                to 53 footers</p>
-                        </figcaption>
-                    </figure>
-                </aside>
-            </section> -->
         <div id="elitecarousel" class="carousel slide" data-bs-ride="carousel">
             <div class="carousel-indicators">
                 <button type="button" data-bs-target="#elitecarousel" data-bs-slide-to="0" class="active"
@@ -225,7 +216,7 @@
     </header>
     <!-- About section-->
     <section class="logobg pt-4" id="about">
-        <div class="container px- mb-5">
+        <div class="container px-4 mb-5">
             <div class="row gx-4 justify-content-center">
                 <div class="col-lg-8">
                     <h2>About</h2>
@@ -234,13 +225,28 @@
             </div>
         </div>
         <!-- Page Content-->
+       
+    </section>
+    <!-- Services section-->
+    <section class="blue pt-4" id="brands">
+        <div class="container px-4 mb-5">
+            <div class="row gx-4 justify-content-center">
+                <div class="col-lg-8">
+                    <h2>Brands</h2>
+                    <p class="lead">We help safeguard your brand and pricing from fraudulent and counterfeit
+                        sellers.</p>
+                    <p class="lead">We streamline distribution by having honest committed partners through one channel for sales growth.</p>
+                </div>
+            </div>
+        </div>
+        <!-- Page Content-->
         <div class="container px-lg-5">
             <!-- Page Features-->
             <div class="row gx-lg-5">
                 <div class="col-lg-6 col-xxl-4 mb-5">
-                    <div class="card bg-light border-0 h-100">
+                    <div class="card bg-light border-0 h-100  shadowb">
                         <div class="card-body text-center p-4 p-lg-5 pt-0 pt-lg-0">
-                            <div class="feature bg-primary bg-gradient text-white rounded-3 mb-4 mt-n4"><i
+                            <div class="feature bg-black bg-gradient text-white rounded-3 mb-4 mt-n4"><i
                                     class="bi bi-file-earmark-check-fill"></i></div>
                             <h2 class="fs-4 fw-bold">Content Management</h2>
                             <p class="mb-0">We optimize your listings so that the right customers find your products.</p>
@@ -248,9 +254,9 @@
                     </div>
                 </div>
                 <div class="col-lg-6 col-xxl-4 mb-5">
-                    <div class="card bg-light border-0 h-100">
+                    <div class="card bg-light border-0 h-100  shadowb">
                         <div class="card-body text-center p-4 p-lg-5 pt-0 pt-lg-0">
-                            <div class="feature bg-primary bg-gradient text-white rounded-3 mb-4 mt-n4"><i
+                            <div class="feature bg-black bg-gradient text-white rounded-3 mb-4 mt-n4"><i
                                     class="bi bi-megaphone-fill"></i></div>
                             <h2 class="fs-4 fw-bold">Advertising</h2>
                             <p class="mb-0">We utilize advertising to fuel Amazon's flywheel effect and drive even more sales</p>
@@ -258,9 +264,9 @@
                     </div>
                 </div>
                 <div class="col-lg-6 col-xxl-4 mb-5">
-                    <div class="card bg-light border-0 h-100">
+                    <div class="card bg-light border-0 h-100  shadowb">
                         <div class="card-body text-center p-4 p-lg-5 pt-0 pt-lg-0">
-                            <div class="feature bg-primary bg-gradient text-white rounded-3 mb-4 mt-n4"><i
+                            <div class="feature bg-black bg-gradient text-white rounded-3 mb-4 mt-n4"><i
                                     class="bi bi-bullseye"></i></div>
                             <h2 class="fs-4 fw-bold">Brand Protection</h2>
                             <p class="mb-0">We leverage all available tools to ensure visibility and growth for new products.</p>
@@ -268,9 +274,9 @@
                     </div>
                 </div>
                 <div class="col-lg-6 col-xxl-4 mb-5">
-                    <div class="card bg-light border-0 h-100">
+                    <div class="card bg-light border-0 h-100  shadowb">
                         <div class="card-body text-center p-4 p-lg-5 pt-0 pt-lg-0">
-                            <div class="feature bg-primary bg-gradient text-white rounded-3 mb-4 mt-n4"><i
+                            <div class="feature bg-black bg-gradient text-white rounded-3 mb-4 mt-n4"><i
                                     class="bi bi-truck-front-fill"></i></div>
                             <h2 class="fs-4 fw-bold">Logistics</h2>
                             <p class="mb-0">We take care of your shipping and returns with our highly trained warehouse team.</p>
@@ -278,9 +284,9 @@
                     </div>
                 </div>
                 <div class="col-lg-6 col-xxl-4 mb-5">
-                    <div class="card bg-light border-0 h-100">
+                    <div class="card bg-light border-0 h-100  shadowb">
                         <div class="card-body text-center p-4 p-lg-5 pt-0 pt-lg-0">
-                            <div class="feature bg-primary bg-gradient text-white rounded-3 mb-4 mt-n4"><i
+                            <div class="feature bg-black bg-gradient text-white rounded-3 mb-4 mt-n4"><i
                                     class="bi bi-rocket-takeoff-fill"></i></div>
                             <h2 class="fs-4 fw-bold">New Product Launches</h2>
                             <p class="mb-0">We leverage all available tools to ensure visibility and growth for new products.</p>
@@ -288,63 +294,14 @@
                     </div>
                 </div>
                 <div class="col-lg-6 col-xxl-4 mb-5">
-                    <div class="card bg-light border-0 h-100">
+                    <div class="card bg-light border-0 h-100  shadowb">
                         <div class="card-body text-center p-4 p-lg-5 pt-0 pt-lg-0">
-                            <div class="feature bg-primary bg-gradient text-white rounded-3 mb-4 mt-n4"><i
+                            <div class="feature bg-black bg-gradient text-white rounded-3 mb-4 mt-n4"><i
                                     class="bi bi-people-fill"></i></div>
                             <h2 class="fs-4 fw-bold">A name you trust</h2>
                             <p class="mb-0">We leverage all available tools to ensure visibility and growth for new products.</p>
                         </div>
                     </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- Services section-->
-    <section class="blue" id="brands">
-        <div class="container px-4">
-            <div class="row gx-4 justify-content-center">
-                <div class="col-lg-8">
-                    <h2>Brands</h2>
-                    <p class="lead">We help safeguard your brand and pricing from fraudulent and counterfeit
-                        sellers.</p>
-                    <p class="lead">We streamline distribution by having honest committed partners through one channel
-                        for
-                        sales
-                        growth.</p>
-                    <ul>
-                        <li>148.6 million amazon prime members and growing! Overall the US accounts for 74%
-                            accounts globally.</li>
-                    </ul>
-                    <div class="alert alert-primary" role="alert">
-                        A simple primary alert—check it out!
-                    </div>
-                    <!-- Modal -->
-                    <!-- Button trigger modal -->
-                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                        Click here to learn more...
-                    </button>
-    
-                    <!-- Modal -->
-                    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
-                        aria-hidden="true">
-                        <div class="modal-dialog">
-                            <div class="modal-content">
-                                <div class="modal-header">
-                                    <h5 class="modal-title" id="exampleModalLabel">How we are different</h5>
-                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
-                                        aria-label="Close"></button>
-                                </div>
-                                <div class="modal-body">
-                                    Here we can highlight important facts that makes us stand out from the competition...
-                                </div>
-                                <!-- <div class="modal-footer">
-                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                                </div> -->
-                            </div>
-                        </div>
-                    </div>
-                    <!--end modal-->
                 </div>
             </div>
         </div>
@@ -366,9 +323,9 @@
             <!-- Page Features-->
             <div class="row gx-lg-5">
                 <div class="col-lg-6 col-xxl-4 mb-5">
-                    <div class="card bg-light border-0 h-100">
+                    <div class="card bg-light border-0 h-100  shadowb">
                         <div class="card-body text-center p-4 p-lg-5 pt-0 pt-lg-0">
-                            <div class="feature bg-primary bg-gradient text-white rounded-3 mb-4 mt-n4"><i
+                            <div class="feature bg-eblue bg-gradient text-white rounded-3 mb-4 mt-n4"><i
                                     class="bi bi-collection"></i></div>
                             <h2 class="fs-4 fw-bold">Fresh new layout</h2>
                             <p class="mb-0">With Bootstrap 5, we've created a fresh new layout for this template!</p>
@@ -376,9 +333,9 @@
                     </div>
                 </div>
                 <div class="col-lg-6 col-xxl-4 mb-5">
-                    <div class="card bg-light border-0 h-100">
+                    <div class="card bg-light border-0 h-100  shadowb">
                         <div class="card-body text-center p-4 p-lg-5 pt-0 pt-lg-0">
-                            <div class="feature bg-primary bg-gradient text-white rounded-3 mb-4 mt-n4"><i
+                            <div class="feature bg-eblue bg-gradient text-white rounded-3 mb-4 mt-n4"><i
                                     class="bi bi-cloud-download"></i></div>
                             <h2 class="fs-4 fw-bold">Free to download</h2>
                             <p class="mb-0">As always, Start Bootstrap has a powerful collectin of free templates.</p>
@@ -386,9 +343,9 @@
                     </div>
                 </div>
                 <div class="col-lg-6 col-xxl-4 mb-5">
-                    <div class="card bg-light border-0 h-100">
+                    <div class="card bg-light border-0 h-100  shadowb">
                         <div class="card-body text-center p-4 p-lg-5 pt-0 pt-lg-0">
-                            <div class="feature bg-primary bg-gradient text-white rounded-3 mb-4 mt-n4"><i
+                            <div class="feature bg-eblue bg-gradient text-white rounded-3 mb-4 mt-n4"><i
                                     class="bi bi-card-heading"></i></div>
                             <h2 class="fs-4 fw-bold">Jumbotron hero header</h2>
                             <p class="mb-0">The heroic part of this template is the jumbotron hero header!</p>
@@ -396,9 +353,9 @@
                     </div>
                 </div>
                 <div class="col-lg-6 col-xxl-4 mb-5">
-                    <div class="card bg-light border-0 h-100">
+                    <div class="card bg-light border-0 h-100  shadowb">
                         <div class="card-body text-center p-4 p-lg-5 pt-0 pt-lg-0">
-                            <div class="feature bg-primary bg-gradient text-white rounded-3 mb-4 mt-n4"><i
+                            <div class="feature bg-eblue bg-gradient text-white rounded-3 mb-4 mt-n4"><i
                                     class="bi bi-bootstrap"></i></div>
                             <h2 class="fs-4 fw-bold">Feature boxes</h2>
                             <p class="mb-0">We've created some custom feature boxes using Bootstrap icons!</p>
@@ -406,9 +363,9 @@
                     </div>
                 </div>
                 <div class="col-lg-6 col-xxl-4 mb-5">
-                    <div class="card bg-light border-0 h-100">
+                    <div class="card bg-light border-0 h-100  shadowb">
                         <div class="card-body text-center p-4 p-lg-5 pt-0 pt-lg-0">
-                            <div class="feature bg-primary bg-gradient text-white rounded-3 mb-4 mt-n4"><i
+                            <div class="feature bg-eblue bg-gradient text-white rounded-3 mb-4 mt-n4"><i
                                     class="bi bi-code"></i></div>
                             <h2 class="fs-4 fw-bold">Simple clean code</h2>
                             <p class="mb-0">We keep our dependencies up to date and squash bugs as they come!</p>
@@ -416,9 +373,9 @@
                     </div>
                 </div>
                 <div class="col-lg-6 col-xxl-4 mb-5">
-                    <div class="card bg-light border-0 h-100">
+                    <div class="card bg-light border-0 h-100  shadowb">
                         <div class="card-body text-center p-4 p-lg-5 pt-0 pt-lg-0">
-                            <div class="feature bg-primary bg-gradient text-white rounded-3 mb-4 mt-n4"><i
+                            <div class="feature bg-eblue bg-gradient text-white rounded-3 mb-4 mt-n4"><i
                                     class="bi bi-patch-check"></i></div>
                             <h2 class="fs-4 fw-bold">A name you trust</h2>
                             <p class="mb-0">Start Bootstrap has been the leader in free Bootstrap templates since 2013!
@@ -512,7 +469,7 @@
                         </div>
                         <!--Grid row-->
                         <div class="text-center">
-                            <button class="btn btn-primary" type="submit">Send</button>
+                            <button class="btn send" type="submit">Send</button>
                         </div>
                     </form>
 
